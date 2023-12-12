@@ -1,0 +1,30 @@
+@page "/browse-spotify"
+
+@using SpotifyApp.Services
+@inject SpotifyService _spotifyService
+@using blazorappca.Models
+@using Newtonsoft.Json
+
+
+<h3>Browse Spotify Data</h3>
+
+@if (browseData != null)
+{
+    <pre>@browseData</pre>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+@code {
+    private BrowseData browseData { get; set; }
+
+    [Inject]
+    private SpotifyService? spotifyService { get; set; }
+
+    private async Task Explore()
+    {
+        browseData = await spotifyService.GetBrowseData();
+    }
+}

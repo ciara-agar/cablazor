@@ -1,0 +1,36 @@
+﻿@* This Razor page allows users to search for songs using the Spotify API.
+   The page contains an input field for the search query, a search button, and a list to display the search results. *@
+@page "/spotify-search"
+@inject SpotifyService _spotifyService
+@using SpotifyApp.Services
+@using blazorappca.Models
+
+
+<h3>Search for a Song</h3>
+
+<input type="text" @bind="searchQuery" />
+<button @onclick="SearchSongs">Search</button>
+
+@if (searchResults != null)
+{
+    <h4>Search Results:</h4>
+    <ul>
+        @foreach (var song in searchResults)
+        {
+            <li>@song.Name by @song.Artist</li>
+        }
+    </ul>
+}
+
+@code {
+    private string? searchQuery;
+    private List<Song>? searchResults;
+
+    [Inject]
+    private SpotifyService? spotifyService { get; set; }
+
+    private async Task SearchSongs()
+    {
+        searchResults = await spotifyService.SearchSongs(searchQuery);
+    }
+}

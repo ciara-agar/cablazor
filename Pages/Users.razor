@@ -1,0 +1,34 @@
+@page "/user"
+@* This Razor page allows users to search for songs using the Spotify API.
+   The page contains an input field for the search query, a search button, and a list to display the search results. *@
+@inject SpotifyService _spotifyService
+@using SpotifyApp.Services
+@using blazorappca.Models
+
+
+<h1>User Information</h1>
+
+@if (UserData != null)
+{
+    <div>
+        <h2>@UserData.Name</h2>
+        <p>Followers: @UserData.FollowersCount</p>
+        <p>Following: @UserData.FollowingCount</p>
+        <!-- Display other user details as needed -->
+        <img src="@UserData.ImageUrl" alt="User Image" />
+    </div>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+@code {
+    private UserData UserData { get; set; }
+    private string response;
+
+    protected override async Task OnInitializedAsync()
+    {
+        response = await _spotifyService.GetUsersData();
+    }
+}

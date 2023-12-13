@@ -1,13 +1,12 @@
 @page "/user"
-@* This Razor page allows users to search users *@
 @inject SpotifyService _spotifyService
 @using SpotifyApp.Services
 @using blazorappca.Models
 
-<h1>User Information</h1>
+<h1>User Playlists</h1>
 
-<h3>Search for a User</h3>
-
+<h3>Search for a Users Playlists by user id</h3>
+<p>Example:  nocopyrightsounds</p>
 
 <input type="text" @bind="searchQuery" />
 <button @onclick="SearchUser">Search</button>
@@ -18,7 +17,8 @@
     <ul>
         @foreach (var user in userResults)
         {
-            <li>@user.Name by @user.FollowersCount <a href="@user.ImageUrl" target="_blank">User Profile Picture</a></li>
+            <li>@user.Name by @user.FollowersCount </li>
+            
         }
     </ul>
 }

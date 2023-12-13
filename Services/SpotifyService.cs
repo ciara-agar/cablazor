@@ -86,28 +86,14 @@ namespace SpotifyApp.Services
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonString = await response.Content.ReadAsStringAsync();
-                    var jsonObject = JObject.Parse(jsonString);
-
-                    var users = jsonObject["users"];
-                    var items = users?["items"];
-
-                    if (items != null)
-                    {
-                        foreach (var item in items)
-                        {
-                            var user = new UserData();
-
-                            user.Name = item["data"]["name"]?.ToString();
-                            user.FollowersCount = item["data"]["followers"]?.ToString();
-                            var profileArtArray = item["data"]["profileArt"]?["sources"];
-                            user.ImageUrl = profileArtArray?[0]?["url"]?.ToString();
-
-                            // Add additional property assignments based on your JSON structure
-
-                            result.Add(user);
-                        }
-                    }
+                    result = DeserializeUserResults(jsonString);
                 }
+
+                else
+                {
+                    Console.WriteLine($"Failed to fetch data: {response.ReasonPhrase}");
+                }
+
             }
             catch (Exception ex)
             {
@@ -126,29 +112,22 @@ namespace SpotifyApp.Services
             try
             {
                 var jsonObject = JObject.Parse(json);
+                var items = jsonObject["public_playlists"];
 
-                var users = jsonObject["users"];
-
-                if (users != null)
+                if (items != null)
                 {
-                    var items = users["items"];
-                    if (items != null)
+                    foreach (var item in items)
                     {
-                        foreach (var item in items)
-                        {
-                            var userData = new UserData();
+                        var userData = new UserData();
 
-                            userData.Name = item["data"]?["name"]?.ToString();
-                            userData.FollowersCount = item["data"]?["followers"]?.ToString();
-                            userData.FollowingCount = item["data"]?["following"]?.ToString();
-                            var profileImage = item["data"]?["images"]?["sources"];
-                            if (profileImage != null)
-                            {
-                                userData.ImageUrl = profileImage[0]?["url"]?.ToString();
-                            }
+                        userData.Name = item["name"]?.ToString();
+                        userData.ImageUrl = item["image_url"]?.ToString();
+                        userData.FollowersCount = item["followers_count"]?.ToString();
+                        userData.FollowingCount = item["following_count"]?.ToString();
+                    
 
-                            result.Add(userData);
-                        }
+                        // Add the constructed UserData object to the result list
+                        result.Add(userData);
                     }
                 }
             }
@@ -160,6 +139,7 @@ namespace SpotifyApp.Services
 
             return result;
         }
+
 
 
         public async Task<List<Song>> SearchSongs(string query)

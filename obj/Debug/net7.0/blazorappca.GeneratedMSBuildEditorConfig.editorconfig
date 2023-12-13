@@ -24,16 +24,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uY2VydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ciara/blazorappca/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ciara/blazorappca/Pages/SpotifyExplore.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BvdGlmeUV4cGxvcmUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ciara/blazorappca/Pages/SpotifySearch.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BvdGlmeVNlYXJjaC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ciara/blazorappca/Pages/Users.razor]
@@ -47,6 +39,14 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/ciara/blazorappca/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ciara/blazorappca/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-7gbkmcy9t7
+
+[C:/Users/ciara/blazorappca/Pages/SpotifySearch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BvdGlmeVNlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mx0eoxg3hj
 
 [C:/Users/ciara/blazorappca/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

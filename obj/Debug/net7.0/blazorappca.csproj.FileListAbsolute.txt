@@ -1,9 +1,3 @@
-C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.csproj.AssemblyReference.cache
-C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.AssemblyInfoInputs.cache
-C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.AssemblyInfo.cs
-C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.csproj.CoreCompileInputs.cache
-C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ciara\blazorappca\bin\Debug\net7.0\wwwroot\_framework\blazor.boot.json
 C:\Users\ciara\blazorappca\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\ciara\blazorappca\bin\Debug\net7.0\wwwroot\_framework\blazorappca.dll
@@ -614,6 +608,12 @@ C:\Users\ciara\blazorappca\bin\Debug\net7.0\icudt.dat
 C:\Users\ciara\blazorappca\bin\Debug\net7.0\icudt_CJK.dat
 C:\Users\ciara\blazorappca\bin\Debug\net7.0\icudt_EFIGS.dat
 C:\Users\ciara\blazorappca\bin\Debug\net7.0\icudt_no_CJK.dat
+C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.csproj.AssemblyReference.cache
+C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.AssemblyInfoInputs.cache
+C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.AssemblyInfo.cs
+C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.csproj.CoreCompileInputs.cache
+C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\build-gz\ZnLUcvvq.gz
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\build-gz\W+g238Wi.gz
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\build-gz\u+G0jCGo.gz
@@ -825,6 +825,7 @@ C:\Users\ciara\blazorappca\obj\Debug\net7.0\staticwebassets\msbuild.buildTransit
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\ciara\blazorappca\obj\Debug\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\scopedcss\bundle\blazorappca.styles.css
@@ -834,3 +835,4 @@ C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.dll
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\refint\blazorappca.dll
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\blazorappca.pdb
 C:\Users\ciara\blazorappca\obj\Debug\net7.0\ref\blazorappca.dll
+C:\Users\ciara\blazorappca\obj\Debug\net7.0\scopedcss\Pages\SpotifySearch.razor.rz.scp.css

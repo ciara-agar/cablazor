@@ -5,6 +5,7 @@
 @using SpotifyApp.Services
 @using blazorappca.Models
 
+@* Import the styles.css file *@
 
 <h3>Search for a Song</h3>
 
@@ -17,7 +18,8 @@
     <ul>
         @foreach (var song in searchResults)
         {
-            <li>@song.Name by @song.Artist <a href="@song.CoverUrl" >Cover Art</a></li>
+            <li>@song.Name by @song.Artist </li>
+            <img src="@song.CoverUrl" alt="Spotify Logo">
         }
     </ul>
 }

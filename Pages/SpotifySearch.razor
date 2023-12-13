@@ -17,7 +17,7 @@
     <ul>
         @foreach (var song in searchResults)
         {
-            <li>@song.Name by @song.Artist</li>
+            <li>@song.Name by @song.Artist <a href="@song.CoverUrl" >Cover Art</a></li>
         }
     </ul>
 }

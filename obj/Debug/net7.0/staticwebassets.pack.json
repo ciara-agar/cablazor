@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\ciara\\blazorappca\\wwwroot\\images\\Spotify-Logo.png",
+      "PackagePath": "staticwebassets\\images\\Spotify-Logo.png"
+    },
+    {
       "Id": "C:\\Users\\ciara\\blazorappca\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

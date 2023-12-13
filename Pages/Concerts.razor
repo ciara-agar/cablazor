@@ -1,6 +1,4 @@
 @page "/concerts"
-@* This Razor page allows users to search for songs using the Spotify API.
-   The page contains an input field for the search query, a search button, and a list to display the search results. *@
 @inject SpotifyService _spotifyService
 @using SpotifyApp.Services
 @using blazorappca.Models
@@ -26,15 +24,12 @@ else
     <p>Loading...</p>
 }
 
-
 @code {
     private ConcertData ConcertData { get; set; }
-    private string concertResponse;
 
     protected override async Task OnInitializedAsync()
     {
         // Fetch concert data from ConcertService
-         concertResponse = await _spotifyService.ExploreConcerts();
-
+        ConcertData = await _spotifyService.ExploreConcerts();
     }
 }

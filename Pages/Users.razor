@@ -1,34 +1,37 @@
 @page "/user"
-@* This Razor page allows users to search for songs using the Spotify API.
-   The page contains an input field for the search query, a search button, and a list to display the search results. *@
+@* This Razor page allows users to search users *@
 @inject SpotifyService _spotifyService
 @using SpotifyApp.Services
 @using blazorappca.Models
 
-
 <h1>User Information</h1>
 
-@if (UserData != null)
+<h3>Search for a User</h3>
+
+
+<input type="text" @bind="searchQuery" />
+<button @onclick="SearchUser">Search</button>
+
+@if (userResults != null)
 {
-    <div>
-        <h2>@UserData.Name</h2>
-        <p>Followers: @UserData.FollowersCount</p>
-        <p>Following: @UserData.FollowingCount</p>
-        <!-- Display other user details as needed -->
-        <img src="@UserData.ImageUrl" alt="User Image" />
-    </div>
-}
-else
-{
-    <p>Loading...</p>
+    <h4>Search Results:</h4>
+    <ul>
+        @foreach (var user in userResults)
+        {
+            <li>@user.Name by @user.FollowersCount <a href="@user.ImageUrl" target="_blank">User Profile Picture</a></li>
+        }
+    </ul>
 }
 
 @code {
-    private UserData UserData { get; set; }
-    private string response;
+    private List<UserData> userResults;
+    private string searchQuery;
 
-    protected override async Task OnInitializedAsync()
+    private async Task SearchUser()
     {
-        response = await _spotifyService.GetUsersData();
+        if (!string.IsNullOrEmpty(searchQuery))
+        {
+            userResults = await _spotifyService.SearchUser(searchQuery);
+        }
     }
 }

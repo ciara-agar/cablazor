@@ -30,6 +30,7 @@ namespace blazorappca.Models
     }
 
 
+
     public class Data
     {
         public BrowseStart BrowseStart { get; set; }
@@ -128,8 +129,8 @@ namespace blazorappca.Models
     {
         public string Name { get; set; }
         public string ImageUrl { get; set; }
-        public int FollowersCount { get; set; }
-        public int FollowingCount { get; set; }
+        public string FollowersCount { get; set; }
+        public string FollowingCount { get; set; }
         public PublicPlaylistsInfo PublicPlaylists { get; set; }
         public bool IsVerified { get; set; }
         public bool ReportAbuseDisabled { get; set; }
@@ -139,7 +140,10 @@ namespace blazorappca.Models
         public bool AllowFollows { get; set; }
         public bool ShowFollows { get; set; }
     }
-
+     public class ApiUserResponse
+    {
+        public List<UserData> Response { get; set; }
+    }
     public class PublicPlaylistsInfo
     {
         public int TotalPublicPlaylistsCount { get; set; }

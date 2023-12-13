@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hhMzQ7ak83tEQPefIK6ZYz4GNB6eofCKtVWT0DItLKE=",
+  "Hash": "cwLR/VIFSM1Dq7bq9jjcrwl1PivfBNlHjTIwhkaZMhw=",
   "Source": "blazorappca",
   "BasePath": "/",
   "Mode": "Root",
@@ -7206,6 +7206,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\ciara\\blazorappca\\wwwroot\\images\\Spotify-Logo.png",
+      "SourceId": "blazorappca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ciara\\blazorappca\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/Spotify-Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Spotify-Logo.png"
     },
     {
       "Identity": "C:\\Users\\ciara\\blazorappca\\wwwroot\\index.html",

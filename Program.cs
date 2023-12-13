@@ -24,7 +24,7 @@ var client = new HttpClient();
 var request = new HttpRequestMessage
 {
 	Method = HttpMethod.Get,
-	RequestUri = new Uri("https://spotify23.p.rapidapi.com/search/?q=%3CREQUIRED%3E&type=multi&offset=0&limit=10&numberOfTopResults=5"),
+	RequestUri = new Uri("https://spotify23.p.rapidapi.com/"),
 	Headers =
 	{
 		{ "X-RapidAPI-Key", "a11cf6dff3msh6bd5e873b4b9b3ep18f22ejsn61929a88d79c" },

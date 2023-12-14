@@ -1,1 +1,0 @@
-C:\Users\ciara\blazorappca\bin\Debug\net7.0\publish\web.config

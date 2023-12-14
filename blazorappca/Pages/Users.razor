@@ -1,0 +1,37 @@
+@page "/user"
+@inject SpotifyService _spotifyService
+@using SpotifyApp.Services
+@using blazorappca.Models
+
+<h1>User Playlists</h1>
+
+<h3>Search for a Users Playlists by user id</h3>
+<p>Example:  nocopyrightsounds</p>
+
+<input type="text" @bind="searchQuery" />
+<button @onclick="SearchUser">Search</button>
+
+@if (userResults != null)
+{
+    <h4>Search Results:</h4>
+    <ul>
+        @foreach (var user in userResults)
+        {
+            <li>@user.Name by @user.FollowersCount </li>
+            
+        }
+    </ul>
+}
+
+@code {
+    private List<UserData> userResults;
+    private string searchQuery;
+
+    private async Task SearchUser()
+    {
+        if (!string.IsNullOrEmpty(searchQuery))
+        {
+            userResults = await _spotifyService.SearchUser(searchQuery);
+        }
+    }
+}

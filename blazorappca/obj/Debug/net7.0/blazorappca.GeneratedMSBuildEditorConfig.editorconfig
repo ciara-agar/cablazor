@@ -1,0 +1,63 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = blazorappca
+build_property.RootNamespace = blazorappca
+build_property.ProjectDir = c:\Users\ciara\wholeblazorca\blazorappca\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\ciara\wholeblazorca\blazorappca
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/ciara/wholeblazorca/blazorappca/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ciara/wholeblazorca/blazorappca/Pages/Concerts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uY2VydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ciara/wholeblazorca/blazorappca/Pages/SpotifyExplore.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BvdGlmeUV4cGxvcmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ciara/wholeblazorca/blazorappca/Pages/Users.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ciara/wholeblazorca/blazorappca/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ciara/wholeblazorca/blazorappca/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/ciara/wholeblazorca/blazorappca/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-7gbkmcy9t7
+
+[c:/Users/ciara/wholeblazorca/blazorappca/Pages/SpotifySearch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BvdGlmeVNlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mx0eoxg3hj
+
+[c:/Users/ciara/wholeblazorca/blazorappca/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-okzrzkls7r
+
+[c:/Users/ciara/wholeblazorca/blazorappca/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-emffcdtgxc

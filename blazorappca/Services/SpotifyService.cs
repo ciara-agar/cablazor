@@ -201,7 +201,6 @@ namespace SpotifyApp.Services
 
                     song.ReleaseYear = item["data"]["date"]["year"].ToString();
 
-                    // Other properties can be extracted similarly based on the JSON structure
 
                     // Adding the constructed song to the result list
                     result.Add(song);

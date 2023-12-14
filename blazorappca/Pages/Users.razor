@@ -17,7 +17,7 @@
     <ul>
         @foreach (var user in userResults)
         {
-            <li>Public playlist by @user.Name followed by @user.FollowersCount users </li>
+            <li>{searchQuery} public playlist: @user.Name followed by @user.FollowersCount users </li>
             
         }
     </ul>
